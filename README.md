@@ -1,23 +1,3 @@
-###### …or create a new repository on the command line
-```  Bash
-echo "# backend" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:borboton/backend.git
-git push -u origin master
-```
-###### …or push an existing repository from the command line
-
-``` Bash
-git remote add origin git@github.com:borboton/backend.git
-git push -u origin master
-
-```
-###### …or import code from another repository
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
-
-
 ##### Angular_projects
 ###### Angular projects for educational purpuse.
 
@@ -90,17 +70,19 @@ and your component will be generated in src/app/feature/new-cmp
 You can find all possible blueprints in the table below:
 
 ``` Javascripts
-Scaffold	Usage
-Component	ng g component my-new-component
-Directive	ng g directive my-new-directive
-Pipe	    ng g pipe my-new-pipe
-Service	    ng g service my-new-service
-Class	    ng g class my-new-class
-Guard	    ng g guard my-new-guard
-Interface	ng g interface my-new-interface
-Enum	    ng g enum my-new-enum
-Module	    ng g module my-module
-angular-cli will add reference to components, directives and pipes automatically in the app.module.ts. If you need to add this references to another custom module, follow this steps:
+Scaffold	      Usage
+Component	      ng g component my-new-component
+Directive	      ng g directive my-new-directive
+Pipe	          ng g pipe my-new-pipe
+Service	        ng g service my-new-service
+Class	          ng g class my-new-class
+Guard	          ng g guard my-new-guard
+Interface	      ng g interface my-new-interface
+Enum	          ng g enum my-new-enum
+Module	        ng g module my-module
+angular-cli     will add reference to components, directives and pipes automatically in the app.module.ts. 
+                If you need to add this references to another custom module, follow this steps:
+                
 ng g module new-module to create a new module
 call ng g component new-module/new-component
 This should add the new component, directive or pipe reference to the new-module you've created
